@@ -1,0 +1,68 @@
+body {
+    background-color: #1a472a; /* Verde Natal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-gap: 12px;
+    background-color: #d42426; /* Vermelho Noel */
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5), inset 0 0 15px rgba(255,255,255,0.2);
+    border: 4px solid #f8b229; /* Dourado */
+}
+
+.display {
+    grid-column: span 4;
+    background-color: #fff;
+    color: #333;
+    text-align: right;
+    padding: 15px;
+    font-size: 1.8rem;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.2);
+    min-height: 35px;
+}
+
+.btn {
+    width: 70px;
+    height: 70px;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fcfcfc;
+    color: #1a472a;
+    transition: transform 0.1s, background 0.3s;
+}
+
+.btn:hover {
+    background-color: #f8b229;
+    transform: scale(1.05);
+}
+
+.btn.equal {
+    grid-row: span 2;
+    height: 152px;
+    border-radius: 35px;
+    background-color: #f8b229;
+}
+
+.btn.zero {
+    grid-column: span 2;
+    width: 152px;
+    border-radius: 35px;
+}
+
+.btn.clear {
+    color: #d42426;
+}
